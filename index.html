@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <script defer src="face-api.min.js"></script>
+  <!-- the face api script needs to be above the normal script so our script has access to the api -->
   <script defer src="script.js"></script>
   <style>
     body {
@@ -21,6 +22,7 @@
     canvas {
       position: absolute;
     }
+    /* this is what show the face detection overlay the position must be absolute for it to overlay correctly */
   </style>
 </head>
 <body>
